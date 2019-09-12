@@ -19,7 +19,7 @@ namespace QuestionTest3
 
 
     /*================================= P:S, Please right click on every single question and select 'Set as Start up Project to run the program, Thanks ============================================== */
-    class Program
+    class Question3
     {
         //Code solution goes here
         //Start by creating a static method with two parameters.
