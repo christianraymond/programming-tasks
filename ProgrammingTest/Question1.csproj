@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E0F52412-6AF8-490C-85D6-069204CC2114}</ProjectGuid>
+    <ProjectGuid>{4CAA5700-80C9-449B-AEB3-3A7342131261}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>QuestionTest2</RootNamespace>
-    <AssemblyName>QuestionTest2</AssemblyName>
+    <RootNamespace>ProgrammingTest</RootNamespace>
+    <AssemblyName>ProgrammingTest</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Question2.cs" />
+    <Compile Include="DecimalGroupedByComma.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
