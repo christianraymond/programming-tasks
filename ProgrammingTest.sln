@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question2", "ProgrammingTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question3", "QuestionTest3\QuestionTest3\Question3.csproj", "{0C5E7B0F-B6B1-4641-A4EE-E964B3833CDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnagramUnitTest", "AnagramUnitTest\AnagramUnitTest\AnagramUnitTest.csproj", "{EFE2B796-D839-4FB5-98C5-CBAD0FB61679}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecimalGroupedByCommaUnitTest", "DecimalGroupedByCommaUnitTest\DecimalGroupedByCommaUnitTest.csproj", "{6EF488C5-250D-4322-AD60-4035C8615C6B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumAreEqualFromLeftToRightUnitTest", "SumAreEqualFromLeftToRightUnitTest\SumAreEqualFromLeftToRightUnitTest.csproj", "{A8D45B55-9661-4F0E-8629-AF4DD1589665}"
@@ -33,10 +31,6 @@ Global
 		{0C5E7B0F-B6B1-4641-A4EE-E964B3833CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C5E7B0F-B6B1-4641-A4EE-E964B3833CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C5E7B0F-B6B1-4641-A4EE-E964B3833CDF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EFE2B796-D839-4FB5-98C5-CBAD0FB61679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EFE2B796-D839-4FB5-98C5-CBAD0FB61679}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EFE2B796-D839-4FB5-98C5-CBAD0FB61679}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EFE2B796-D839-4FB5-98C5-CBAD0FB61679}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6EF488C5-250D-4322-AD60-4035C8615C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6EF488C5-250D-4322-AD60-4035C8615C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EF488C5-250D-4322-AD60-4035C8615C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU

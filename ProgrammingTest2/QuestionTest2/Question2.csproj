@@ -44,8 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Anagram.cs" />
-    <Compile Include="ClassHelpers\AnagramHandler.cs" />
-    <Compile Include="ClassHelpers\FileHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

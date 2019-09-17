@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Question2;
+using anagramGenerate;
+using System.Linq;
+using System;
 
 namespace AnagramUnitTest
 {
@@ -11,31 +13,15 @@ namespace AnagramUnitTest
         public void CompareAnagram()
         {
             //Arrange
-            var word = "orchestra";
-            var words = new List<string> {"orchestra", "heros", "horse", "mist"};
+            var word = "horse";
+            var words = new List<string> { "heros", "shore", "horse"};
             //Act
-            var matchingWords = Anagram.getAllAnagrams(words, word);
+            var matchingWords = Anagram.FindAnagramWords();
 
             //Assert
-            Assert.AreEqual(matchingWords.Count, 3);
+            Assert.AreEqual(matchingWords, words);
+
         }
-    }
 
-    [TestClass]
-    public class AnagramUnitTest2
-    {
-        [TestMethod]
-        public void ThisTestWillFail()
-        {
-
-            //Arrange
-            var word = "notInTheList";
-            var words = new List<string> { "accentuate", "accent", "banana", "archicture"};
-            //Act
-            var matchingWords = Anagram.getAllAnagrams(words, word);
-
-            //Assert
-            Assert.AreEqual(matchingWords.Count, 6);
-        }
     }
 }
