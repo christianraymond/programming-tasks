@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 
-
 //Right click on the Question folder(eg: Question3)then select #Set as a StartUp Project# to run the app. because there are more than one project in the same solution.
 
-namespace anagramGenerate //Hit Ctrl + F5 to execute the program in the cdm.
+namespace anagramGenerate //Hit Ctrl + F5 to execute the program in cdm.
 {
     public static class Program
     { 
         public static IEnumerable<string> FindAnagramWords()
         {
-            using (StreamReader sr = File.OpenText("C:/workspace/ProgrammingTest/wordlist.txt"))  //Give the right path to this file in your computer and your anagram you want to test
+            using (StreamReader sr = File.OpenText("C:/workspace/ProgrammingTest/wordlist.txt"))  //Give the right path to this file in your computer.
             {
                 string s = String.Empty;
                 while ((s = sr.ReadLine()) != null)
@@ -55,15 +54,23 @@ namespace anagramGenerate //Hit Ctrl + F5 to execute the program in the cdm.
             string CompareWord;
             do
             {
-                Console.Write(string.Format("{0}Type the word you would like to see the anagram for: ",
-                    Environment.NewLine));
+                Console.Write(string.Format("{0}Type the word you would like to see the anagram for: ", Environment.NewLine));
                 CompareWord = Console.ReadLine();
 
                 stopWatch.Reset();
                 stopWatch.Start();
               if (CompareWord != null)
                 {
-                    IEnumerable<string> Anagrams = AllWords[ToCharArray(CompareWord)];
+                    IEnumerable<string> Anagrams = new List<string>();
+                    try
+                    {
+                       Anagrams = AllWords[ToCharArray(CompareWord)];
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine("Oops, the word you typed does not exist in the list, please try again!");
+                        continue;
+                    }
                     stopWatch.Stop();
                     Console.WriteLine("Anagram for " + CompareWord + " are:");
 
@@ -72,6 +79,7 @@ namespace anagramGenerate //Hit Ctrl + F5 to execute the program in the cdm.
                         Console.WriteLine(word);
                     }
                 }
+              
             } while (CompareWord != null);
         }
     }
