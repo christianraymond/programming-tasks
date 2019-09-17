@@ -6,7 +6,7 @@ using QuestionTest3;
 namespace SumAreEqualFromLeftToRightUnitTest
 {
     [TestClass]
-    public class CheckOpposedValues
+    public class ProgramUnitTest
     {
         [TestMethod]
         public void FindSidebySideOfTheArray()

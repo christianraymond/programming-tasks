@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Diagnostics.Eventing.Reader;
 using System.IO;
-using System.Linq;
-using System.Runtime.CompilerServices;
 
-namespace anagramGenerate //Hit Ctrl + F5 to execute the program in cdm.
+
+//Right click on the Question folder(eg: Question3)then select #Set as a StartUp Project# to run the app. because there are more than one project in the same solution.
+
+namespace anagramGenerate //Hit Ctrl + F5 to execute the program in the cdm.
 {
-   public static class Anagram
-    {
+    public static class Program
+    { 
         public static IEnumerable<string> FindAnagramWords()
         {
-            using (StreamReader sr = File.OpenText("C:/workspace/ProgrammingTest/wordlist.txt"))  //Give the right path to this file in your computer.
+            using (StreamReader sr = File.OpenText("C:/workspace/ProgrammingTest/wordlist.txt"))  //Give the right path to this file in your computer and your anagram you want to test
             {
                 string s = String.Empty;
                 while ((s = sr.ReadLine()) != null)

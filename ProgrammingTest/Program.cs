@@ -5,9 +5,9 @@ using System.Text;
 
 namespace ProgrammingTest
 {
-    public static class DecimalGroupedByComma
+    public static class Program
         {
-            public static void Main(string[] args) { }
+            public static void Main(string[] args) { } 
             public static string decimalNumGroupedByCommas(this int input)
             {
                 var arr = input.ToString().ToCharArray().ToList();
